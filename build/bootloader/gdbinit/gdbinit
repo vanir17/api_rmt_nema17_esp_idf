@@ -1,2 +1,2 @@
-source D:/3_Nema17_test/blink/build/bootloader/gdbinit/symbols
-source D:/3_Nema17_test/blink/build/bootloader/gdbinit/connect
+source /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader/gdbinit/symbols
+source /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader/gdbinit/connect

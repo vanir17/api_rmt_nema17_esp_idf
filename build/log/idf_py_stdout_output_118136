@@ -1,0 +1,273 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader && /home/vanir17/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/vanir17/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader/bootloader.bin
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/vanir17/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v6.1-dev-2441-gffb63db38b-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/config -I/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main -I/home/vanir17/esp/esp-idf/components/esp_libc/platform_include -I/home/vanir17/esp/esp-idf/components/freertos/config/include -I/home/vanir17/esp/esp-idf/components/freertos/config/include/freertos -I/home/vanir17/esp/esp-idf/components/freertos/config/xtensa/include -I/home/vanir17/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/vanir17/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/vanir17/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/vanir17/esp/esp-idf/components/freertos/esp_additions/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/include/soc -I/home/vanir17/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/etm/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/mspi/mspi_intr/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/modem/include -I/home/vanir17/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/vanir17/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/vanir17/esp/esp-idf/components/heap/include -I/home/vanir17/esp/esp-idf/components/heap/tlsf -I/home/vanir17/esp/esp-idf/components/log/include -I/home/vanir17/esp/esp-idf/components/soc/include -I/home/vanir17/esp/esp-idf/components/soc/esp32 -I/home/vanir17/esp/esp-idf/components/soc/esp32/include -I/home/vanir17/esp/esp-idf/components/soc/esp32/register -I/home/vanir17/esp/esp-idf/components/hal/platform_port/include -I/home/vanir17/esp/esp-idf/components/hal/esp32/include -I/home/vanir17/esp/esp-idf/components/hal/include -I/home/vanir17/esp/esp-idf/components/esp_rom/include -I/home/vanir17/esp/esp-idf/components/esp_rom/esp32/include -I/home/vanir17/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/vanir17/esp/esp-idf/components/esp_rom/esp32 -I/home/vanir17/esp/esp-idf/components/esp_common/include -I/home/vanir17/esp/esp-idf/components/esp_system/include -I/home/vanir17/esp/esp-idf/components/esp_system/port/soc -I/home/vanir17/esp/esp-idf/components/esp_system/port/include/private -I/home/vanir17/esp/esp-idf/components/esp_stdio/include -I/home/vanir17/esp/esp-idf/components/xtensa/esp32/include -I/home/vanir17/esp/esp-idf/components/xtensa/include -I/home/vanir17/esp/esp-idf/components/xtensa/deprecated_include -I/home/vanir17/esp/esp-idf/components/esp_hal_gpio/include -I/home/vanir17/esp/esp-idf/components/esp_hal_gpio/esp32/include -I/home/vanir17/esp/esp-idf/components/esp_hal_usb/include -I/home/vanir17/esp/esp-idf/components/esp_hal_pmu/include -I/home/vanir17/esp/esp-idf/components/esp_hal_pmu/esp32/include -I/home/vanir17/esp/esp-idf/components/esp_hal_ana_conv/include -I/home/vanir17/esp/esp-idf/components/esp_hal_ana_conv/esp32/include -I/home/vanir17/esp/esp-idf/components/esp_hal_dma/include -I/home/vanir17/esp/esp-idf/components/esp_hal_i2s/include -I/home/vanir17/esp/esp-idf/components/esp_hal_i2s/esp32/include -I/home/vanir17/esp/esp-idf/components/esp_driver_gpio/include -I/home/vanir17/esp/esp-idf/components/esp_driver_rmt/include -I/home/vanir17/esp/esp-idf/components/esp_hal_rmt/include -I/home/vanir17/esp/esp-idf/components/esp_hal_rmt/esp32/include -I/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/managed_components/espressif__led_strip/include -I/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/managed_components/espressif__led_strip/interface -I/home/vanir17/esp/esp-idf/components/esp_driver_spi/include -I/home/vanir17/esp/esp-idf/components/esp_pm/include -I/home/vanir17/esp/esp-idf/components/esp_hal_gpspi/include -I/home/vanir17/esp/esp-idf/components/esp_hal_gpspi/esp32/include -I/home/vanir17/esp/esp-idf/components/esp_driver_dma/include @"/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/toolchain/cflags" -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf=. -fmacro-prefix-map=/home/vanir17/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:6:1: error: stray '@' in program
+    6 | @@ -10,18 +11,86 @@
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:6:2: error: stray '@' in program
+    6 | @@ -10,18 +11,86 @@
+      |  ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:6:4: error: expected identifier or '(' before '-' token
+    6 | @@ -10,18 +11,86 @@
+      |    ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:6:18: error: stray '@' in program
+    6 | @@ -10,18 +11,86 @@
+      |                  ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:6:19: error: stray '@' in program
+    6 | @@ -10,18 +11,86 @@
+      |                   ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:20:1: error: unknown type name 'rmt_encoder_handle_t'
+   20 | rmt_encoder_handle_t g_copy_encoder = NULL;
+      | ^~~~~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:20:39: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | rmt_encoder_handle_t g_copy_encoder = NULL;
+      |                                       ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:21:1: error: unknown type name 'rmt_symbol_word_t'
+   21 | rmt_symbol_word_t *g_payload = NULL;
+      | ^~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c: In function 'setup_RMT':
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:94:1: error: stray '@' in program
+   94 | @@ -30,76 +99,86 @@ void app_main(void)
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:94:2: error: stray '@' in program
+   94 | @@ -30,76 +99,86 @@ void app_main(void)
+      |  ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:94:18: error: stray '@' in program
+   94 | @@ -30,76 +99,86 @@ void app_main(void)
+      |                  ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:94:19: error: stray '@' in program
+   94 | @@ -30,76 +99,86 @@ void app_main(void)
+      |                   ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:94:21: error: expected '}' before 'void'
+   94 | @@ -30,76 +99,86 @@ void app_main(void)
+      |                     ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:91:26: note: to match this '{'
+   91 | gpio_config_t dir_conf = {
+      |                          ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:101:5: error: unknown type name 'rmt_channel_handle_t'; did you mean 'esp_etm_channel_handle_t'?
+  101 |     rmt_channel_handle_t tx_channel = NULL;
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     esp_etm_channel_handle_t
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:101:39: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  101 |     rmt_channel_handle_t tx_channel = NULL;
+      |                                       ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:102:1: error: unknown type name 'rmt_tx_channel_config_t'; did you mean 'esp_etm_channel_config_t'?
+  102 | rmt_tx_channel_config_t tx_chan_config = {
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+      | esp_etm_channel_config_t
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:103:1: error: field name not in record or union initializer
+  103 | .clk_src = RMT_CLK_SRC_DEFAULT, // Nguồn Clock mặc định
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:103:1: note: (near initialization for 'tx_chan_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:103:12: error: 'RMT_CLK_SRC_DEFAULT' undeclared (first use in this function)
+  103 | .clk_src = RMT_CLK_SRC_DEFAULT, // Nguồn Clock mặc định
+      |            ^~~~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:103:12: note: each undeclared identifier is reported only once for each function it appears in
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:104:1: error: field name not in record or union initializer
+  104 | .gpio_num = STEP_PIN,  // Chân bắn xung
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:104:1: note: (near initialization for 'tx_chan_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:8:18: warning: excess elements in scalar initializer
+    8 | #define STEP_PIN 23
+      |                  ^~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:104:13: note: in expansion of macro 'STEP_PIN'
+  104 | .gpio_num = STEP_PIN,  // Chân bắn xung
+      |             ^~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:8:18: note: (near initialization for 'tx_chan_config')
+    8 | #define STEP_PIN 23
+      |                  ^~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:104:13: note: in expansion of macro 'STEP_PIN'
+  104 | .gpio_num = STEP_PIN,  // Chân bắn xung
+      |             ^~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:105:1: error: field name not in record or union initializer
+  105 | .mem_block_symbols = 128, // số lượng bộ nhớ đệm
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:105:1: note: (near initialization for 'tx_chan_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:105:22: warning: excess elements in scalar initializer
+  105 | .mem_block_symbols = 128, // số lượng bộ nhớ đệm
+      |                      ^~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:105:22: note: (near initialization for 'tx_chan_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:106:1: error: field name not in record or union initializer
+  106 | .resolution_hz = RMT_RESOLUTION_HZ, // 1MHz, nghĩa là 1tick = 1us
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:106:1: note: (near initialization for 'tx_chan_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:11:27: warning: excess elements in scalar initializer
+   11 | #define RMT_RESOLUTION_HZ (1000000u)
+      |                           ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:106:18: note: in expansion of macro 'RMT_RESOLUTION_HZ'
+  106 | .resolution_hz = RMT_RESOLUTION_HZ, // 1MHz, nghĩa là 1tick = 1us
+      |                  ^~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:11:27: note: (near initialization for 'tx_chan_config')
+   11 | #define RMT_RESOLUTION_HZ (1000000u)
+      |                           ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:106:18: note: in expansion of macro 'RMT_RESOLUTION_HZ'
+  106 | .resolution_hz = RMT_RESOLUTION_HZ, // 1MHz, nghĩa là 1tick = 1us
+      |                  ^~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:107:1: error: field name not in record or union initializer
+  107 | .trans_queue_depth = 4, // Hàng đợi lệnh
+      | ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:107:1: note: (near initialization for 'tx_chan_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:107:22: warning: excess elements in scalar initializer
+  107 | .trans_queue_depth = 4, // Hàng đợi lệnh
+      |                      ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:107:22: note: (near initialization for 'tx_chan_config')
+In file included from /home/vanir17/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/vanir17/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h:21,
+                 from /home/vanir17/esp/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/vanir17/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:48,
+                 from /home/vanir17/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/vanir17/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:3:
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:109:21: error: implicit declaration of function 'rmt_new_tx_channel' [-Wimplicit-function-declaration]
+  109 |     ESP_ERROR_CHECK(rmt_new_tx_channel(&tx_chan_config, &tx_channel));
+      |                     ^~~~~~~~~~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:110:21: error: implicit declaration of function 'rmt_enable' [-Wimplicit-function-declaration]
+  110 |     ESP_ERROR_CHECK(rmt_enable(tx_channel));
+      |                     ^~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:115:58: error: 'g_tx_channel' undeclared (first use in this function); did you mean 'tx_channel'?
+  115 |     ESP_ERROR_CHECK(rmt_new_tx_channel(&tx_chan_config, &g_tx_channel));
+      |                                                          ^~~~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:119:5: error: unknown type name 'rmt_encoder_handle_t'
+  119 |     rmt_encoder_handle_t copy_encoder = NULL;
+      |     ^~~~~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:119:41: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  119 |     rmt_encoder_handle_t copy_encoder = NULL;
+      |                                         ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:120:1: error: unknown type name 'rmt_copy_encoder_config_t'
+  120 | rmt_copy_encoder_config_t copy_encoder_config = {};
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:121:21: error: implicit declaration of function 'rmt_new_copy_encoder' [-Wimplicit-function-declaration]
+  121 |     ESP_ERROR_CHECK(rmt_new_copy_encoder(&copy_encoder_config, &copy_encoder));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:122:5: error: unknown type name 'rmt_transmit_config_t'
+  122 |     rmt_transmit_config_t tx_config = {
+      |     ^~~~~~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:123:9: error: field name not in record or union initializer
+  123 |         .loop_count = 0,
+      |         ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:123:9: note: (near initialization for 'tx_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:129:43: error: 'rmt_symbol_word_t' undeclared (first use in this function)
+  129 |     size_t size = PULSES_PER_REV * sizeof(rmt_symbol_word_t);
+      |                                           ^~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:130:37: error: expected expression before ')' token
+  130 |     g_payload = (rmt_symbol_word_t *)malloc(size);
+      |                                     ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:129:12: warning: unused variable 'size' [-Wunused-variable]
+  129 |     size_t size = PULSES_PER_REV * sizeof(rmt_symbol_word_t);
+      |            ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:122:27: warning: unused variable 'tx_config' [-Wunused-variable]
+  122 |     rmt_transmit_config_t tx_config = {
+      |                           ^~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c: In function 'move_motor':
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:138:34: error: 'rmt_symbol_word_t' undeclared (first use in this function)
+  138 |     size_t size = steps * sizeof(rmt_symbol_word_t);
+      |                                  ^~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:139:24: error: 'payload_cw' undeclared (first use in this function)
+  139 |     rmt_symbol_word_t *payload_cw = (rmt_symbol_word_t *)malloc(size);
+      |                        ^~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:139:57: error: expected expression before ')' token
+  139 |     rmt_symbol_word_t *payload_cw = (rmt_symbol_word_t *)malloc(size);
+      |                                                         ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:140:24: error: 'payload_ccw' undeclared (first use in this function)
+  140 |     rmt_symbol_word_t *payload_ccw = (rmt_symbol_word_t *)malloc(size);
+      |                        ^~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:140:58: error: expected expression before ')' token
+  140 |     rmt_symbol_word_t *payload_ccw = (rmt_symbol_word_t *)malloc(size);
+      |                                                          ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:157:21: error: request for member 'level0' in something not a structure or union
+  157 |         g_payload[i].level0 = DIR_CW;
+      |                     ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:158:21: error: request for member 'duration0' in something not a structure or union
+  158 |         g_payload[i].duration0 = duration;
+      |                     ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:159:21: error: request for member 'level1' in something not a structure or union
+  159 |         g_payload[i].level1 = DIR_CCW;
+      |                     ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:160:21: error: request for member 'duration1' in something not a structure or union
+  160 |         g_payload[i].duration1 = duration;
+      |                     ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:166:5: error: expected expression before 'uint32_t'
+  166 |     uint32_t steps_needed = (uint32_t)((angle / 360.0) * PULSES_PER_REV);
+      |     ^~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:167:8: error: 'steps_needed' undeclared (first use in this function)
+  167 |     if(steps_needed > PULSES_PER_REV)
+      |        ^~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:169:21: error: 'i' undeclared (first use in this function)
+  169 |         payload_ccw[i].level0 = 1;
+      |                     ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:177:5: error: expected expression before 'else'
+  177 |     else if(steps_needed == 0)
+      |     ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:197:5: error: unknown type name 'rmt_transmit_config_t'
+  197 |     rmt_transmit_config_t tx_config = { .loop_count = 0};
+      |     ^~~~~~~~~~~~~~~~~~~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:197:41: error: field name not in record or union initializer
+  197 |     rmt_transmit_config_t tx_config = { .loop_count = 0};
+      |                                         ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:197:41: note: (near initialization for 'tx_config')
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:202:21: error: implicit declaration of function 'rmt_transmit' [-Wimplicit-function-declaration]
+  202 |     ESP_ERROR_CHECK(rmt_transmit(g_tx_channel, g_copy_encoder,
+      |                     ^~~~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:202:34: error: 'g_tx_channel' undeclared (first use in this function)
+  202 |     ESP_ERROR_CHECK(rmt_transmit(g_tx_channel, g_copy_encoder,
+      |                                  ^~~~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:204:21: error: implicit declaration of function 'rmt_tx_wait_all_done' [-Wimplicit-function-declaration]
+  204 |     ESP_ERROR_CHECK(rmt_tx_wait_all_done(g_tx_channel, -1));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+/home/vanir17/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:138:12: warning: unused variable 'size' [-Wunused-variable]
+  138 |     size_t size = steps * sizeof(rmt_symbol_word_t);
+      |            ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c: At top level:
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:209:5: warning: data definition has no type or storage class
+  209 |     free(payload_cw);
+      |     ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:209:5: error: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:209:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:209:5: error: conflicting types for 'free'; have 'int()'
+In file included from /home/vanir17/esp/esp-idf/components/esp_libc/platform_include/assert.h:12,
+                 from /home/vanir17/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h:462,
+                 from /home/vanir17/esp/esp-idf/components/esp_libc/platform_include/sys/reent.h:15,
+                 from /home/vanir17/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h:60,
+                 from /home/vanir17/esp/esp-idf/components/esp_libc/platform_include/stdio.h:17,
+                 from /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:1:
+/home/vanir17/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h:94:9: note: previous declaration of 'free' with type 'void(void *)'
+   94 | void    free (void *) _NOTHROW;
+      |         ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:210:5: warning: data definition has no type or storage class
+  210 |     free(payload_ccw);
+      |     ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:210:5: error: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:210:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:210:5: error: conflicting types for 'free'; have 'int()'
+/home/vanir17/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h:94:9: note: previous declaration of 'free' with type 'void(void *)'
+   94 | void    free (void *) _NOTHROW;
+      |         ^~~~
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/main/main.c:211:1: error: expected identifier or '(' before '}' token
+  211 | }
+      | ^
+ninja: build stopped: subcommand failed.

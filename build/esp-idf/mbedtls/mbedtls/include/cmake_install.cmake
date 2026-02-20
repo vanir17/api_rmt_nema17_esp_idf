@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include
+# Install script for directory: /home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/blink")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,115 +32,38 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/ISLINGR/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "/home/vanir17/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mbedtls" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aria.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1write.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/block_cipher.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/camellia.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chacha20.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chachapoly.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cmac.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/compat-2.x.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_from_psa.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_from_legacy.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_ssl.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_x509.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/constant_time.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/debug.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/des.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/dhm.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdh.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecjpake.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/gcm.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hkdf.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/lms.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md5.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/memory_buffer_alloc.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/nist_kw.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pem.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pk.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs12.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs5.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs7.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/poly1305.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/psa_util.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ripemd160.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha3.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_cache.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/threading.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/timing.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/version.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_csr.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/debug.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs7.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_cache.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/timing.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/version.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_csr.h"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/psa" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/build_info.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_auto_enabled.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_dependencies.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_synonyms.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_composites.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_key_derivation.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_primitives.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_compat.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_config.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_common.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_composites.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_key_derivation.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_primitives.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_extra.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_platform.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_se_driver.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_sizes.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_struct.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_types.h"
-    "C:/Users/ISLINGR/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_values.h"
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mbedtls/private" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private/config_adjust_ssl.h"
+    "/home/vanir17/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private/config_adjust_x509.h"
     )
 endif()
 

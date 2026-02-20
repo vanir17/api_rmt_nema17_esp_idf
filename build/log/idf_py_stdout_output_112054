@@ -1,0 +1,16 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader && /home/vanir17/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/vanir17/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader/bootloader.bin
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rmt_nema.c.obj
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+[5/7] Linking CXX executable blink.elf
+[6/7] Generating binary image from built executable
+esptool v5.2.dev4
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/blink.bin
+[7/7] cd /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build && /home/vanir17/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/vanir17/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/partition_table/partition-table.bin /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/blink.bin
+blink.bin binary size 0x26160 bytes. Smallest app partition is 0x100000 bytes. 0xd9ea0 bytes (85%) free.

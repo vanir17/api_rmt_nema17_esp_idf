@@ -1,0 +1,22 @@
+Command: cmake -G Ninja -B /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/vanir17/.espressif/python_env/idf6.1_py3.10_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf
+Configuration Report                                                                                                                                                                     
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                                                                                                                                     
+   Verbosity: default                                                                                                                                                                    
+   Defaults policy: sdkconfig                                                                                                                                                            
+   Status: Finished with notifications                                                                                                                                                   
+                                                                                                                                                                                         
+  Disabled Symbols/Choices With User-Set Value                                                                                                                                           
+   ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   
+    * PARTITION_TABLE_CUSTOM_FILENAME (defined at /home/vanir17/esp/esp-idf/components/partition_table/Kconfig.projbuild:129) with user-set value partitions.csv from                    
+    /tmp/kconfgen_tmpj28md250                                                                                                                                                            
+    * ESP_INTR_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/esp_hw_support/Kconfig:403) with user-set value y from /tmp/kconfgen_tmpj28md250                                 
+    * LIBC_MISC_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/esp_libc/Kconfig:45) with user-set value y from /tmp/kconfgen_tmpj28md250                                       
+    * ESP_ROM_PRINT_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/esp_rom/Kconfig:3) with user-set value y from /tmp/kconfgen_tmpj28md250                                     
+    * ESP_CONSOLE_UART_BAUDRATE (defined at /home/vanir17/esp/esp-idf/components/esp_stdio/Kconfig:150) with user-set value 115200 from /tmp/kconfgen_tmpj28md250                        
+    * ESP_SYSTEM_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/esp_system/Kconfig:12) with user-set value y from /tmp/kconfgen_tmpj28md250                                    
+    * ESP_TIMER_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/esp_timer/Kconfig:3) with user-set value y from /tmp/kconfgen_tmpj28md250                                       
+    * LOG_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/log/Kconfig:55) with user-set value y from /tmp/kconfgen_tmpj28md250                                                  
+    * SPI_FLASH_PLACE_FUNCTIONS_IN_IRAM (defined at /home/vanir17/esp/esp-idf/components/spi_flash/Kconfig:178) with user-set value y from /tmp/kconfgen_tmpj28md250                     
+   ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 

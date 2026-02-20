@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-D:/3_Nema17_test/blink/build/CMakeFiles/bootloader
-D:/3_Nema17_test/blink/build/CMakeFiles/bootloader.rule
-D:/3_Nema17_test/blink/build/CMakeFiles/bootloader-complete.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/CMakeFiles/bootloader
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/CMakeFiles/bootloader.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/CMakeFiles/bootloader-complete.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

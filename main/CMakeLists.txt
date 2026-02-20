@@ -1,5 +1,3 @@
-idf_component_register(
-    SRCS "rmt_nema.c" "main.c"
-    INCLUDE_DIRS "rmt_nema.h"
-    REQUIRES driver esp_hw_support 
-)
+idf_component_register(SRCS "main.c" "rmt_nema.c"
+                    INCLUDE_DIRS "."
+                    REQUIRES esp_driver_gpio esp_driver_rmt)

@@ -7,7 +7,8 @@
 #include "stdio.h"
 #include "math.h"
 #include "driver/gpio.h"
-
+#include <math.h>
+#include <stdlib.h>
 typedef struct 
 {
     uint16_t step_pin;
@@ -19,8 +20,9 @@ typedef struct
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
-esp_err_t init_rmt(const rmt_nema_config_t *config);
 
+esp_err_t init_rmt(const rmt_nema_config_t *config);
+esp_err_t rmt_nema_set_speed(rmt_nema_config_t *config, int64_t speed_hz);
 
 
 

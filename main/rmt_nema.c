@@ -2,7 +2,7 @@
 
 #define DIR_CW 0
 #define DIR_CCW !DIR_CW
-#define RMT_
+
 
 /*******************************************************************************
  * Variables
@@ -14,30 +14,38 @@ static rmt_channel_handle_t g_tx_channel = NULL;
 /*******************************************************************************
  * Functions
  ******************************************************************************/
-static void init_rmt(const rmt_nema_config_t *config);
 
-void rmt_nema(rmt_nema_config_t *config, float speed_hz, )
+esp_err_t rmt_nema_set_speed(rmt_nema_config_t *config, int64_t speed_hz)
 {
-    init_rmt(config);
-    gpio_set_level (config->)
-    if(g_payload == NULL)
+    rmt_disable(g_tx_channel);
+    if(speed_hz == 0)
     {
-        return ESP_FAILED;
+        // rmt_disable();
+        return ESP_OK;
     }
+    bool clockwise = (speed_hz > 0);
+    gpio_set_level(config->dir_pin, clockwise ? DIR_CW : DIR_CCW);
+    
+    uint64_t speed = llabs(speed_hz);
+    uint64_t half_period = (uint32_t)config->rmt_resolution_hz / (speed * 2);
 
-    for (int i = 0; i < config->pulses_per_rev; i++)
-    {
-        g_payload[i].level0 = DIR_CW;
-        g_payload[i].duration0 = config->duration;
-        g_payload[i].level1 = DIR_CCW;
-        g_payload[i].duration1 = config->duration;
-    }
-
-
+    g_payload[0] = (rmt_symbol_word_t) {
+        .level0 = 1, 
+        .duration0 = half_period,
+        .level1 = 0,
+        .duration1 = half_period,
+    };
+    rmt_transmit_config_t tx_config = {
+        .loop_count = -1, 
+    };
+    // ESP_ERROR_CHECK();
+    // ESP_LOGD(TAG, "Hello %d", speed);
+    rmt_enable(g_tx_channel);
+    return rmt_transmit(g_tx_channel, g_copy_encoder, g_payload, sizeof(rmt_symbol_word_t), &tx_config);
 
 }
 
-static void init_rmt(const rmt_nema_config_t *config)
+esp_err_t init_rmt(const rmt_nema_config_t *config)
 {
     gpio_config_t dir_conf = {
         .pin_bit_mask = (1ULL << config->dir_pin), //1: giá trị 01, ULL: unsigned long long(8byte - 64bit), <<: dịch trái
@@ -61,11 +69,27 @@ static void init_rmt(const rmt_nema_config_t *config)
 
     rmt_copy_encoder_config_t copy_encoder_config = {};
     ESP_ERROR_CHECK(rmt_new_copy_encoder(&copy_encoder_config, &g_copy_encoder));
-    rmt_transmit_config_t tx_config = {
-        .loop_count = -1,
-    };
-    size_t size = config->pulses_per_rev * sizeof(rmt_symbol_word_t);
-    g_payload = (rmt_symbol_word_t *)malloc(size);
+    // size_t size = config->pulses_per_rev * 
+    g_payload = (rmt_symbol_word_t *)malloc(sizeof(rmt_symbol_word_t));
+    if(g_payload == NULL)
+    {
+        return ESP_FAIL;
+    }
+    return ESP_OK;
 }
 
 
+esp_err_t rmt_tx_stop(rmt_channel_t channel)
+{
+    ESP_RETURN_ON_FALSE(RMT_IS_TX_CHANNEL(channel), ESP_ERR_INVALID_ARG, TAG, RMT_CHANNEL_ERROR_STR);
+    RMT_ENTER_CRITICAL();
+#if SOC_RMT_SUPPORT_ASYNC_STOP
+    rmt_ll_tx_stop(rmt_contex.hal.regs, channel);
+#else
+    // write ending marker to stop the TX channel
+    RMTMEM.chan[channel].data32[0].val = 0;
+#endif
+    rmt_ll_tx_reset_pointer(rmt_contex.hal.regs, channel);
+    RMT_EXIT_CRITICAL();
+    return ESP_OK;
+}

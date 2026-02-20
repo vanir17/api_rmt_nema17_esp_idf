@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/3_Nema17_test/blink/build/CMakeFiles/bootloader"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "D:/3_Nema17_test/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/vanir17/1_workspace/esp_idf_ws/testing/02_rmt_nema_api/api_rmt_nema17_esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 
